@@ -9,7 +9,9 @@ function index(req, res, next) {
 }
 
 function create(req, res, next) {
-    res.send(`Usuario nuevo`)
+    const name = req.body.name;
+    const lastname = req.body.lastname;
+    res.send(`Usuario nuevo con nombre ${name} y apellido ${lastname}`)
 }
 
 function replace(req, res, next) {
